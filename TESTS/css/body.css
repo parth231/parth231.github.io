@@ -1,0 +1,101 @@
+h1{
+      font-size: 56px;
+      color: antiquewhite;
+      padding-top: 50px;
+      font-family: 'Aclonica';
+      animation-name: slide;
+      animation-duration: 2s;
+      text-align: center;
+}
+.row{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+}
+.col{
+      flex: 25%;
+      max-width: 25%;
+      padding: 0;
+}
+.col img {
+      padding: 5px 2.5px 0px 2.5px;
+      vertical-align: middle;
+}
+.name{
+      color: cornsilk;
+      background-color: black;
+      text-align: center;
+      font-size: 28px;
+      margin: 0px 2.5px;
+      font-family: 'Amethysta';
+}
+#main{
+      position: sticky;
+      display: block;
+      top: 0%;
+      z-index: 1;
+}
+.main2{
+      background-color: cornsilk;
+      display: inline;
+      padding: 0 0 0 5px;
+}
+#main3{
+      padding: 0 5px 0 0;
+      display: inline;
+      background-color: cornsilk;
+}
+#open{
+      transition: visible 0.5s;
+      position: absolute;
+      font-size:35px;
+      color: black;
+      cursor:pointer;
+      display: block;
+}
+.p:hover{
+      box-shadow: 0px 0px 4px 4px #888888;
+}
+.p:focus{
+      box-shadow: 0px 0px 3px 3px #888888;
+}
+@keyframes slide{
+      0%   {margin-left: -150%;}
+      80% {margin-left: 10%;}
+      100% {margin-left: 0%;}
+}
+@media (max-width: 1200px) {
+      .name{font-size: 24px;}
+}
+@media (max-width: 1100px) {
+      .name{font-size: 30px;}
+      .col{flex: 50%;max-width: 50%;}
+}
+@media (max-width: 800px) {
+      .name{font-size: 28px;}
+      h1{font-size:44px;}
+      #open{font-size: 28px;}
+}
+@media (max-width: 770px){
+      .name{font-size: 24px;}
+}
+@media (max-width: 600px) {
+      .col{flex: 100%;max-width: 100%;}
+      .name{font-size: 30px;}
+      h1{font-size:38px;}
+      #open{font-size: 26px;}
+}
+@media (max-width: 420px) {
+      .name{font-size: 26px;}
+      h1{font-size:36px;}
+      #open{font-size: 24px;}
+}
+@media (max-width: 400px){
+      h1{padding-top: 25px;}   
+}
+@media screen and (max-width: 250px){
+      body{display: none;}
+}
