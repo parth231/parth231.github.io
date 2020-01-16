@@ -96,7 +96,7 @@ h1{
 }
 @media (max-width: 600px) {
       .flexbox{flex: 100%;max-width: 100%;}
-      h1{font-size: 40px;margin-top: 50px;}
+      h1{font-size: 40px;padding-top: 50px;}
       .name{font-size: 30px;}
       #open{font-size: 26px;}
       #heads h1{font-size: 100px;}
@@ -111,7 +111,7 @@ h1{
       /* #btns{margin-top: -50%;} */
 }
 @media (max-width: 400px){
-      h1{margin-top: 25px;}  
+      h1{padding-top: 25px;}  
       #heads h1{font-size: 75px;}
       /* #btns{margin-top: -70%;}  */
 }
