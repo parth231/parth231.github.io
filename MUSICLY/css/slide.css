@@ -1,0 +1,90 @@
+*{
+      margin: 0%;
+      padding: 0%; 
+      box-sizing: border-box;
+}
+body{
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: rgba(5, 5, 5, 0.9);
+}
+.sidenav{
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 1s;
+      padding-top: 100px;
+      text-align:center;
+} 
+.sidenav a {
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.5s;
+      margin-top: 25px;
+}
+.sidenav a:hover , .sidenav a:focus {
+      color: #f1f1f1;
+      font-size:42px;
+}
+.sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 5%;
+      font-size: 50px;
+}
+.sidenav .closebtn:hover{
+      font-size: 60px;
+}
+a{
+      text-decoration: none !important;
+}
+@media screen and (max-width: 800px){
+      .sidenav a{margin-top: 20px;}
+      .flexs{margin-top: 10%;}
+}
+@media screen and (max-width: 550px) and (orientation: portrait){
+      .sidenav a{font-size: 30px;}
+      .sidenav a:hover{font-size: 35px;color: #f1f1f1;}
+}
+@media screen and (max-width: 400px) and (orientation: portrait){
+      .sidenav a{font-size: 25px;}
+      .sidenav a:hover{font-size: 28px;color: #f1f1f1;}
+}
+@media screen and (max-width: 350px) and (orientation: portrait){
+      .sidenav a{font-size: 23px;}
+      .sidenav a:hover{font-size: 25px;color: #f1f1f1;}
+}
+@media screen and (max-height: 550px){
+      .sidenav a{margin-top: 15px;}
+}
+@media screen and (max-height: 450px){
+      .sidenav a{margin-top: 7px;}
+}
+@media screen and (max-height: 400px){
+      .sidenav a{margin-top: 5px;}
+      .sidenav {padding-top: 50px;}
+}
+@media screen and (max-height: 300px){
+      .sidenav {padding-top: 50px;}
+      .sidenav a{font-size: 24px;}
+      .sidenav .closebtn {font-size: 35px;}
+}
+@media screen and (max-height : 225px){
+      .sidenav {padding-top: 30px;}
+      .sidenav a{margin-top: 2px;}
+}
+@media screen and (max-width: 250px) and (orientation: portrait){
+      body{display: none;}
+}
+@media screen and (max-height: 200px){
+      body{display: none;}
+}

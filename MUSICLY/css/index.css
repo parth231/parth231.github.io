@@ -1,0 +1,120 @@
+
+h1{
+      font-size: 56px;
+      padding-top: 50px;
+      color: antiquewhite;
+      font-family: 'Aclonica';
+      animation-name: slide;
+      animation-duration: 2s;
+      text-align: center;
+}
+.flexs{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2.5px;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+}
+.flexbox{
+      flex: 50%;
+      max-width: 50%;
+      padding: 0;
+}
+.flexbox img {
+      padding: 5px 2.5px 0px 2.5px; 
+      vertical-align: middle;
+}
+.name{
+      color: cornsilk;
+      text-align: center;
+      font-size: 52px;
+      background-color: black;
+      margin: 0px 2.5px;
+      font-family: 'Amethysta';
+}
+#main{
+      position: sticky;
+      display: block;
+      top: 0%;
+      z-index: 1;
+}
+.main2{
+      background-color: cornsilk;
+      display: inline;
+      padding: 0 0 0 5px;
+}
+#main3{
+      padding: 0 5px 0 0;
+      display: inline;
+      background-color: cornsilk;
+}
+#open{
+      transition: visible 0.5s;
+      position: absolute;
+      font-size:35px;
+      color: black;
+      cursor:pointer;
+      display: block;
+}
+.p:hover{
+      box-shadow: 0px 0px 3px 3px #888888;
+}
+.p:focus{
+      box-shadow: 0px 0px 3px 3px #888888;
+}
+#heads{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 65vh;      
+}
+#heads h1{
+      font-size: 200px;
+}
+#btns{
+      text-align: center;
+      margin-top: -10%;
+}
+@keyframes slide{
+      0%   {margin-left: -150%;}
+      80% {margin-left: 10%;}
+      100% {margin-left: 0%;}
+}
+@media (max-width: 1100px) {
+      .name{font-size: 30px;}
+}
+/* @media screen and (max-height: 500px){
+      #btns{margin-top: -40%;}
+} */
+@media (max-width: 800px) {
+      .name{font-size: 28px;}
+      h1{font-size: 45px;}
+      #open{font-size : 28px}
+      #heads h1{font-size: 150px;}
+      /* #btns{margin-top: -20%;} */
+}
+@media (max-width: 600px) {
+      .flexbox{flex: 100%;max-width: 100%;}
+      h1{font-size: 40px;margin-top: 50px;}
+      .name{font-size: 30px;}
+      #open{font-size: 26px;}
+      #heads h1{font-size: 100px;}
+      /* #btns{margin-top: -30%;} */
+}
+@media (max-width: 420px) {
+      .flexbox{flex: 100%;max-width: 100%;}
+      .name{font-size: 26px;}
+      h1{font-size: 36px;}
+      #open{font-size: 24px;}
+      #heads h1{font-size: 80px;}
+      /* #btns{margin-top: -50%;} */
+}
+@media (max-width: 400px){
+      h1{margin-top: 25px;}  
+      #heads h1{font-size: 75px;}
+      /* #btns{margin-top: -70%;}  */
+}
+@media screen and (max-width: 250px){
+      body{display: none;}
+}
