@@ -1,7 +1,7 @@
 h1{
       font-size: 56px;
       color: antiquewhite;
-      margin-top: 50px;
+      padding-top: 50px;
       font-family: 'Aclonica';
       animation-name: slide;
       animation-duration: 2s;
@@ -94,7 +94,7 @@ h1{
       #open{font-size: 24px;}
 }
 @media (max-width: 400px){
-      h1{margin-top: 25px;}   
+      h1{padding-top: 25px;}   
 }
 @media screen and (max-width: 250px){
       body{display: none;}
